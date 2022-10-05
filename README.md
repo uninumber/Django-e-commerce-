@@ -7,7 +7,7 @@
 * GET /item/{id}
 * GET /buy/{id}
 * Model Order with Discount
-* Admin Panel (ligraus/Xz15062004)
+* Admin Panel (nomik/123456)
 
 ## The most important files to check are: 
 ✔️ **views.py (implementation of actions)**, 
