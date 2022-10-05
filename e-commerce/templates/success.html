@@ -1,0 +1,18 @@
+{% extends 'main.html' %}
+{% load static%}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/fin.css' %}">
+<html>
+<head>
+  <title>Thanks for your order!</title>
+       
+    <form action="/" method="POST">
+      <input type="hidden" id="session-id" name="session_id" value="" />
+	  {% csrf_token %}
+      <a style="margin-top:100px;"href="home" class="example_d">Back to home page.</a>
+ <h3 style="margin-top:100px;margin-bottom:100px;">The product was successfuly bought!</h3>
+    </form>
+  </section>
+</body>
+</html>
+{% endblock content %}

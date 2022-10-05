@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+
+	<link rel="stylesheet" href="{% static 'css/fi.css' %}">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>HashNet</title>
+	</head>
+		<div class="section4">
+
+		<nav class="stroke fixed-nav-bar">
+
+		<ul>
+
+			<li><a class="active" href="home">HashNet</a></li>
+			<li><a href="#contact">Contact</a></li>
+
+				<form class="search">
+					<input type="search" placeholder="Search..." name="search" class="search">
+				</form>
+				
+
+		</ul>
+
+		</nav>
+		<div class="section4">
+		{%block content%}{%endblock content%}
+	</body>
+
+
+
+
+	
+</html>

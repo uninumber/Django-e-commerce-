@@ -1,0 +1,50 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/fin.css' %}">
+<div class="bg3 row">
+	
+
+<div class="column">
+	<a href="home" class="example_c">Back to home</a>
+<img src="{% static 'img/headphoneR.png'%}" style="width:600px; height:600px;">
+
+	<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+
+
+
+</div>
+<div class="column">
+	<h2 style="margin-top:200px;margin-bottom:30px;">XyperSi</h2>
+	<h3 style="color:red">$60.00<h3>
+	<h3 style="margin-top:50px;"> Amazing sound meets signature comfort and wireless freedom</h3>
+	<hr style="border: 2px solid black; margin-top:10px; margin-bottom:10px;">
+	<h3>New design</h3>
+	<h3>New sound</h3>
+	<h3>New speed</h3>
+	<hr style="border: 2px solid black; margin-top:10px; margin-bottom:10px;">
+	<a href="headphone"class="example_d">Purchase</a>
+	<h4>Wait 5 seconds for stripe</h4>
+
+</div>
+</div>
+<hr style="border:2px solid black;">
+
+{%endblock%}
+

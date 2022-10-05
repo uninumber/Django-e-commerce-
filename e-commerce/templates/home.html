@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+	<link rel="stylesheet" href="{% static 'css/fin.css' %}">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>HashNet</title>
+	</head>
+	<body>
+		<nav class="stroke fixed-nav-bar">
+		<ul>
+			<li><a class="active" href="home">HashNet</a></li>
+			<li><a href="mailto:rustofdeveloper@gmail.com">Contact</a></li>
+
+			{% if request.user.is_authenticated %}
+			 <li style="float:right;margin-right:30px;"><a href="{% url 'logout' %}">Logout</a></li>
+			{% else %}
+
+			<li style="float:right;margin-right:30px;"><a href="log">Login</a></li>
+
+			{% endif %}
+
+				<form class="search">
+					<input type="search" placeholder="Search..." name="search" class="search">
+
+				</form>
+		</ul>
+		</nav>
+		<div  style="text-align:center; margin-top:10px;margin-bottom:20px;">
+			<div class="stroke fixed-nav-bar"><h2 style="display:inline-block; margin-top:20px; margin-bottom:10px; ">Why do you choose us?</h2></div>
+
+				<div>
+			<img style="border-radius:50%; margin-top:20px;"  src="{% static '/img/quality.png'%}" width=100px height=100px></img>
+				<div class="mark mark:hover">
+					<h1 class="title">Quality</h1>
+					<p style="margin-left:10px;" class="text2">We guarantee you the incredible<br> Quality of our excellent product <br> Everything made of nice  materials<br></p>
+				</div>
+			</div>
+			<div>
+				<div class="mark">
+ 					<h1 class="title">Design</h1>
+					<p class="text2"> We have absolutely unique design<br> That anyone can't implement <br> And you can have one!</p>
+
+				</div>
+<img style="border-radius:50%; margin-top:20px;"  src="{% static '/img/design.png'%}" width=100px height=100px></img>
+  			</div>
+			<div>
+	<img style="border-radius:50%; margin-top:20px;"  src="{% static '/img/speed.png'%}" width=100px height=100px></img>
+			<div class="mark">
+
+					<h1 class="title">Speed</h1>
+
+					<p class="text2">The fastest delivery in the entire world<br>Free delivery  in every place of the world<br>Our manufactory makes 2000 product a day!</p>
+				</div>
+			</div>
+		</div>
+		
+		</div>
+					<hr style="border: 3px solid black;">
+					<hr style="border: 15px solid #388775;">
+					<hr style="border: 3px solid black;">
+		<div class="section3">
+
+			<h2 style="text-align:center; margin-top:80px; margin-bottom:160px; font-size:220%;"> Top Categories<h2>
+
+					<div class="bg3 row">
+	<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+					<div class="column ">
+						<h4>Headphone</h4>
+
+
+
+						<img  style=" margin-top:20px; box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;" src="{% static '/img/headphones.png'%}" width=280px height=320px></img>
+
+						<div>
+
+
+
+							<a href="headphoneRoom" class="example_d" style="margin-top:20px;">More</a>
+
+
+
+													</div>
+							</a>
+
+						</div>
+						<div class="column">
+							<div>
+								<h4>Gaming mouse</h4>
+							</div>
+						
+					
+						<img style="box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px; margin-top:20px;"  src="{% static '/img/mouse2.png'%}" width=280px height=320px></img>
+				
+						<div>
+
+							<a href="mouseRoom" class="example_d" style="margin-top:20px;">More</a>
+
+						</div>
+							</a>
+
+						</div>
+						<div class="column">
+							<h4>Microphone</h4>
+					
+						<img style="box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;  margin-top:20px;"  src="{% static '/img/micro.png'%}" width=280px height=320px></img>
+
+						<div>
+								{%csrf_token%}
+
+							<a href="microRoom" class="example_d" style="margin-top:20px;">More</a>
+						</div>
+						</div>
+					</div>
+		</div>
+		<hr style="border: 3px solid black;">
+		<hr style="border: 15px solid #388775;">
+		<hr style="border: 3px solid white;">
+		<div class="spacer" style="text-align:center;">
+			<div class="waviy">
+				<span style="--i:1">S</span>
+				<span style="--i:2">u</span>
+				<span style="--i:3">p</span>
+				<span style="--i:4">p</span>
+				<span style="--i:5">o</span>
+				<span style="--i:6">r</span>
+				<span style="--i:7">t</span>
+			</div>
+  <br>
+  <br>
+
+  <h3 style="color:white;">You can follow me here:</h3>
+  <a href="https://github.com/uninumber">
+<img style="border-radius:30%; border: 5px solid black; margin-top:40px;"  src="{% static '/img/github.png'%}" width=70px height=70px></img>
+  </a>
+
+  <br>
+  <br>
+
+  <h3 style="color:white;">If you are ready to hire me <br> or have technical questions:</h3>
+  <br>
+  <a href="mailto:rustofdevelop@gmail.com">
+<img style="border-radius:30%; border: 5px solid black;"  src="{% static '/img/mail.png'%}" width=70px height=70px></img>
+</a>
+		</div>
+	</body>
+</html>
+
