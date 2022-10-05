@@ -1,5 +1,7 @@
 # Django-e-commerce-
 
+##The entire project was made only by myself(full-stack)
+
 ## Account rustofdeveloper@gmail.com/ElOUn;121s (products was binding by ip).
 
 ### This project has:
