@@ -12,9 +12,9 @@
 ## The most important files to check are: 
 ✔️ **views.py (implementation of actions)**, 
 
-✔️ **forms.py(customized {{forms}}),
+✔️ **forms.py(customized {{forms}})**,
 
-✔️ **urls.py,
+✔️ **urls.py**,
 
 ✔️ **home.html**, 
 
