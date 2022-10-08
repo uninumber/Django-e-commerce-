@@ -12,6 +12,7 @@
 * Admin Panel (nomik/123456)
 
 ## The most important files to check are: 
+
 ✔️ **views.py (implementation of actions)**, 
 
 ✔️ **forms.py(customized {{forms}})**,
@@ -22,7 +23,6 @@
 
 ✔️ **success.html(after success purchase)**,
 
-✔️ **room.html(My own initiative for reviews)**
 
 
 ## About functional
