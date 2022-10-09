@@ -23,6 +23,8 @@
 
 ✔️ **success.html(after success purchase)**,
 
+PNG FILES to see WEB.
+
 
 
 ## About functional
